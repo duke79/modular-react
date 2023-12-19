@@ -11,7 +11,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route
+        {/* <Route
           exact
           path="/"
           element={
@@ -24,11 +24,11 @@ function App() {
               ))}
             </div>
           }
-        />
-        {modules.map(({ routes, component: Component }) => (
+        /> */}
+        {modules.map(({ route, component: Component }) => (
           <Route
-            key={routes[0].path}
-            path={routes[0].path}
+            key={route.path}
+            path={route.path}
             // lazy={module.component}
             element={
               <Suspense fallback={<div>Loading...</div>}>

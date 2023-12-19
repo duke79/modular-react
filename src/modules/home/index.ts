@@ -2,12 +2,13 @@ import { lazy } from "react";
 import { ModulConfig } from "../modules.types";
 
 const moduleConfig: ModulConfig = {
-  routes: [
-    {
-      path: "/module-two",
+  route: {
+    path: "/",
+    menu: {
+      label: "Home",
     },
-  ],
-  component: lazy(() => import("./module-two")),
+  },
+  component: lazy(() => import("./home")),
 };
 
 export default moduleConfig;

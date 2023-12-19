@@ -1,4 +1,4 @@
-import ModuleOne from "./module-one";
-import ModuleTwo from "./module-two";
+import Home from "./home";
+import Projects from "./projects";
 
-export const modules = [ModuleOne, ModuleTwo];
+export const modules = [Home, Projects];

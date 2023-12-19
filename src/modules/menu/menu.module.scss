@@ -1,0 +1,30 @@
+.container {
+  //   position: absolute;
+  //   top: 0;
+  //   width: 100%;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .item {
+    font-size: 2rem;
+    margin-right: 2rem;
+
+    a {
+      color: grey;
+      text-decoration: none;
+    }
+  }
+
+  .right {
+    flex-grow: 1;
+  }
+
+  .left {
+    flex-grow: 1;
+    margin-left: 2rem;
+    display: flex;
+    justify-content: flex-start;
+  }
+}
