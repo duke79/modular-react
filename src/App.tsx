@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { Suspense } from "react";
 import { modules } from "./modules";
 import {
   BrowserRouter as Router,
@@ -25,11 +25,16 @@ function App() {
             </div>
           }
         />
-        {modules.map((module) => (
+        {modules.map(({ routes, component: Component }) => (
           <Route
-            key={module.routes[0].path}
-            path={module.routes[0].path}
-            component={module.component}
+            key={routes[0].path}
+            path={routes[0].path}
+            // lazy={module.component}
+            element={
+              <Suspense fallback={<div>Loading...</div>}>
+                <Component />
+              </Suspense>
+            }
           />
         ))}
       </Routes>

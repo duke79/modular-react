@@ -1,3 +1,4 @@
+import { lazy } from "react";
 import { ModulConfig } from "../modules.types";
 
 const moduleConfig: ModulConfig = {
@@ -6,7 +7,7 @@ const moduleConfig: ModulConfig = {
       path: "/module-one",
     },
   ],
-  component: () => import("./module-one.tsx"),
+  component: lazy(() => import("./module-one")),
 };
 
 export default moduleConfig;

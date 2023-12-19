@@ -6,5 +6,5 @@ export type ModulConfig = {
   ];
   // component: () => import("./module-two.tsx"),
   // type instead of import
-  component: () => Promise<{ default: React.ComponentType }>;
+  component: React.LazyExoticComponent<React.ComponentType>;
 };
