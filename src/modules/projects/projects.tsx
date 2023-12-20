@@ -89,7 +89,7 @@ const ModuleTwo = () => {
         // background: "linear-gradient(90deg, #FFFFFF 0%, #F8F8F8 100%)",
         // radial gradient
         background:
-          "radial-gradient(50% 50% at 50% 50%, rgb(254 245 213) 0%, rgb(241 224 224) 100%)",
+          "background: radial-gradient(50% 50% at 50% 50%, rgb(236 239 251) 20%, rgb(241, 224, 224) 100%)",
       }}
     >
       <Menu />
