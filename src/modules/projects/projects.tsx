@@ -1,6 +1,9 @@
 import styles from "./projects.module.scss";
 import Menu from "../menu/menu";
 
+const clickAudio = new Audio("/click-button-140881.mp3");
+clickAudio.volume = 0.002;
+
 const ModuleTwo = () => {
   const projects = [
     {
@@ -83,19 +86,19 @@ const ModuleTwo = () => {
     },
   ];
   return (
-    <div
-      className={styles.container}
-      style={{
-        // background: "linear-gradient(90deg, #FFFFFF 0%, #F8F8F8 100%)",
-        // radial gradient
-        background:
-          "background: radial-gradient(50% 50% at 50% 50%, rgb(236 239 251) 20%, rgb(241, 224, 224) 100%)",
-      }}
-    >
+    <div className={styles.container}>
       <Menu />
       <div className={styles.projects}>
         {projects.map((project) => (
-          <div key={project.label} className={styles.project}>
+          <div
+            key={project.label}
+            className={styles.project}
+            onMouseEnter={() => clickAudio.play()}
+            onMouseLeave={() => {
+              clickAudio.pause();
+              clickAudio.currentTime = 0;
+            }}
+          >
             <h3>{project.label}</h3>
             <p className={styles.summary}>{project.summary}</p>
             <div className={styles.links}>
