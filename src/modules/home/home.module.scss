@@ -22,10 +22,14 @@
   padding: 1rem;
   a {
     display: inline-block;
-    animation: wiggly ease-in-out 20s infinite;
   }
 
-  @keyframes wiggly {
+  .chameleon {
+    color: #e63d09;
+    animation: chameleon ease-in-out 20s infinite;
+  }
+
+  @keyframes chameleon {
     0%, 100% {
       // transform: rotate(-5deg);
       // transform: scale(0.95);

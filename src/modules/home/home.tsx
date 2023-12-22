@@ -9,7 +9,7 @@ const ModuleTwo = () => {
       <div className={styles.intro}>
         <h1>Hello!</h1>
         <h3>
-          I'm Pulkit Singh.
+          I'm <span className={styles.chameleon}>Pulkit Singh.</span>
           <br />
           <br />
           I'm a software engineer.
