@@ -20,4 +20,21 @@
   box-shadow: 0px 0px 7px 1px rgb(116 116 116);
   border-radius: 0.3rem;
   padding: 1rem;
+  a {
+    display: inline-block;
+    animation: wiggly ease-in-out 20s infinite;
+  }
+
+  @keyframes wiggly {
+    0%, 100% {
+      // transform: rotate(-5deg);
+      // transform: scale(0.95);
+      color: rgb(235, 191, 17);
+    }
+    // 25%, 75% {
+    // }
+    50% {
+      color: #e63d09;
+    }
+  }
 }
