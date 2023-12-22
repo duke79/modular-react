@@ -39,6 +39,19 @@ const ModuleTwo = () => {
           <br />
           <br />
           Python, Node.js, Java, C++, C, Flutter, and more.
+          <br />
+          <br />
+        </h3>
+        <h3 className={styles.contact}>
+          <a href="https://www.github.com/duke79">
+            <i>Github</i>
+          </a>
+          &nbsp;&nbsp;&nbsp;
+          <a href="https://www.linkedin.com/in/pulkit-singh-16919713/">
+            <i>LinkedIn</i>
+          </a>
+          <br />
+          <i>pulkitsingh01@gmail.com</i>
         </h3>
       </div>
     </div>
