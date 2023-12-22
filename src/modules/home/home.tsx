@@ -15,14 +15,22 @@ const ModuleTwo = () => {
           I'm a software engineer.
           <br />
           <br />
-          I have worked on a variety of <Link to={'/projects'}>Projects</Link>, ranging from web development
-          to desktop applications development.
+          I have worked on a variety of <Link to={'/projects'}>Projects</Link>,
           <br />
           <br />
-          My primary skills include Typescript, JavaScript, React, HTML, CSS.
+          ranging from web development to desktop applications development.
           <br />
           <br />
-          Apart from that I have also worked with Python, Node.js, Java, C++, C, Flutter, and more.
+          My primary skills include
+          <br />
+          <br />
+          Typescript, JavaScript, React, HTML, CSS.
+          <br />
+          <br />
+          Apart from that I have also worked with
+          <br />
+          <br />
+          Python, Node.js, Java, C++, C, Flutter, and more.
         </h3>
       </div>
     </div>
