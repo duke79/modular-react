@@ -3,7 +3,6 @@ import styles from "./menu.module.scss";
 import { Link } from "react-router-dom";
 
 export const Component = () => {
-  console.log(modules, window.location.pathname);
   return (
     <div className={styles.container}>
       <div className={styles.left}>
