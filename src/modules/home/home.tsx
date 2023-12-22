@@ -1,6 +1,6 @@
 import styles from "./home.module.scss";
 import Menu from "../menu/menu";
-import {Link} from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const ModuleTwo = () => {
   return (
@@ -9,13 +9,21 @@ const ModuleTwo = () => {
       <div className={styles.intro}>
         <h1>Hello!</h1>
         <h3>
-          I'm <span className={styles.chameleon}>Pulkit Singh.</span>
+          I'm{" "}
+          <a
+            className={styles.chameleon}
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.linkedin.com/in/pulkit-singh-16919713/"
+          >
+            Pulkit Singh.
+          </a>
           <br />
           <br />
           I'm a software engineer.
           <br />
-          <br />
-          I have worked on a variety of <Link to={'/projects'}>Projects</Link>,
+          <br />I have worked on a variety of{" "}
+          <Link to={"/projects"}>Projects</Link>,
           <br />
           <br />
           ranging from web development to desktop applications development.
